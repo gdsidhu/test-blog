@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+nav {
+  display: flex;
+  padding: 0 100px;
+  background-color: crimson;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.logo {
+  font-size: 22px;
+  color: white;
+}
+.menu-item {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.menu-item:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.761);
+  font-size: 20px;
+}

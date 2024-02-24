@@ -1,23 +1,28 @@
 <% stylesheet_link_tag "form" %>
 <div class="form-container">
 <%= form_with model: @article do |f| %>
-<div class="field">
-  <%= f.label :title,class:"label"  %>
-  <%= f.text_field :title, class:"text-field-main" %>
+<div class="field-container">
+  <div class="field"><%= f.label :title, class:"label"  %>
+    <%= f.text_field :title, class:"text-field-main" %>
+    </div>
   <% @article.errors.full_messages_for(:title).each do |message| %>
   <div><%= message %></div>
   <% end %>
 </div>
-<div class="field">
-  <%= f.label :body,class:"label" %>
+<div class="field-container">
+  <div class="field">
+    <%= f.label :body,class:"label" %>
   <%= f.text_area :body, class:"text-field" %>
+  </div>
+  
   <% @article.errors.full_messages_for(:body).each do |message| %>
       <div><%= message %></div>
   <% end %>
-</div>
-<div>
+  <div>
 <%= f.submit class: "submit"%>
 </div>
+</div>
+
 
     
 <% end %>

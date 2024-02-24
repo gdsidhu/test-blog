@@ -2,6 +2,18 @@
   font-size: 25px;
   margin: 5px 0px;
 }
+body {
+  background-color: #101827;
+  color: white;
+}
+.jatti {
+  text-decoration: none;
+  color: seagreen;
+}
+.jatti:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .articles {
   display: flex;
   flex-direction: column;

@@ -1,15 +1,19 @@
 <% stylesheet_link_tag "index.css" %>
 <%= render "navbar" %>
+<br>
+<h1>All Articles</h1>
+<br>
 <ul class="articles">
   <% @articles.each do |article| %>
     <li>
-      <%= link_to 'Show',article %>
+      <%= link_to 'Show',article, class:"jatti" %>
       <%= article.title %>
     </li>
   <% end %>
   <%= link_to "New Article", new_article_path, class:"new-article" %>
 </ul>
 <br>
+
 
 
 

@@ -1,10 +1,12 @@
 <%= render "navbar" %>
 <%= stylesheet_link_tag "show" %>
-
+<div class="blog-container">
+  <br>
 <h1><%= @article.title %></h1>
 <br>
+<br>
 <div class="article-content">
-<h3><%= @article.body %></h3>
+<p><%= @article.body %></p>
 
 <ul>
   <%= link_to "Edit", edit_article_path(@article), class:"button" %>
@@ -16,31 +18,35 @@
 </div>
 
 <br>
-<h2>Comments</h2>
-<% @article.comments.each do |comment| %>
-  <p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
-  </p>
 
-  <p>
-    <strong>Comment:</strong>
-    <%= comment.body %>
-  </p>
-<% end %>
+
 <br>
 <h1>Add a Comment:</h1>
+<br>
+<div class="comment-container">
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
     <p>
     <%= form.label :commenter %><br>
-    <%= form.text_field :commenter %>
+    <%= form.text_field :commenter, class:"text-field-main",id:"ford" %>
   </p>
   <p>
     <%= form.label :body %><br>
-    <%= form.text_area :body %>
+    <%= form.text_area :body, class:"text-field",id:"ford" %>
   </p>
   <p>
-    <%= form.submit %>
+    <%= form.submit class:"submit", id:"ford3600" %>
+  </p>
+
+<% end %>
+</div>
+<br>
+<br>
+<h2>Comments</h2>
+<br>
+<% @article.comments.each do |comment| %>
+  <p>
+    <%= comment.commenter.to_s + ": " + comment.body.to_s%>
   </p>
 <% end %>
-  
+
+</div>

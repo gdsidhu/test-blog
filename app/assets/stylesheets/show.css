@@ -1,6 +1,10 @@
 h1 {
-  color: black;
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 600;
 }
+
 .button {
   list-style-type: none;
   display: inline-block;
@@ -30,11 +34,32 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  width: 900px;
   margin: 0 auto;
 }
-h3 {
+p {
   font-size: 22px;
-  line-height: 26px;
-  font-weight: 200;
+  line-height: 38px;
+  font-weight: 300;
+}
+.blog-container {
+  width: fit-content;
+  margin: auto;
+}
+.comment-container {
+  width: fit-content;
+  margin: auto;
+}
+#ford {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.342);
+  border: 1px solid white;
+  color: white;
+}
+#ford3600 {
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+#ford3600:hover {
+  background-color: coral;
 }

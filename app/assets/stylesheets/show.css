@@ -1,5 +1,5 @@
 h1 {
-  color: white;
+  color: #e5e7eb;
   margin-top: 20px;
   text-align: center;
   font-weight: 600;
@@ -38,6 +38,7 @@ h1 {
   margin: 0 auto;
 }
 p {
+  color: #e5e7eb;
   font-size: 22px;
   line-height: 38px;
   font-weight: 300;
@@ -52,9 +53,9 @@ p {
 }
 #ford {
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.342);
-  border: 1px solid white;
-  color: white;
+  background-color: #1f2937;
+  border: 1.5px solid #363f4c;
+  color: #e5e7eb;
 }
 #ford3600 {
   margin: 0;

@@ -27,11 +27,11 @@
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
     <p>
     <%= form.label :commenter %><br>
-    <%= form.text_field :commenter, class:"text-field-main",id:"ford" %>
+    <%= form.text_field :commenter, class:"text-field-main",id:"ford", placeholder:"your name..." %>
   </p>
   <p>
     <%= form.label :body %><br>
-    <%= form.text_area :body, class:"text-field",id:"ford" %>
+    <%= form.text_area :body, class:"text-field",id:"ford", placeholder:"write your comment..." %>
   </p>
   <p>
     <%= form.submit class:"submit", id:"ford3600" %>

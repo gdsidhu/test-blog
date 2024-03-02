@@ -10,7 +10,7 @@
       <%= article.title %>
     </li>
   <% end %>
-  <%= link_to "New Article", new_article_path, class:"new-article" %>
+  <%= link_to "New Article", new_article_path, class:"new-article" if user_signed_in?%>
 </ul>
 <%=render "footer"%> 
 

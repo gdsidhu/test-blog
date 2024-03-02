@@ -50,9 +50,15 @@
 <span class='logo'>MITTRAN DA BLOG</span>
 </div>
   <div class="menus">
-    <%= link_to "Home", root_path, class:"menu-item" %>
+    <%= link_to "Blogs", root_path, class:"menu-item" %>
     <%= link_to "About", root_path, class:"menu-item" %>
-    <%= link_to "Login", root_path, class:"menu-item" %>
-    <span id="signup"><%= link_to "SignUp", root_path, class:"menu-item" %></span>
+    
+    <% if user_signed_in? %>
+    <%# link_to "Profile", edit_user_registration_path, class:"menu-item" %>
+      <%= button_to "Logout", destroy_user_session_path,method: :delete, class:"menu-item" %>
+      <% else %>
+      <%= link_to "Login", "users/sign_in", class:"menu-item" %>
+    <% end %>
+    <span id="signup"><%= link_to "Website", "https://gdsidhu.github.io/website/", class:"menu-item", target: "_blank" %></span>
   </div>
 </nav>

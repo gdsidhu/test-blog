@@ -10,11 +10,11 @@
 
 <br>
 <ul>
-  <%= link_to "Edit", edit_article_path(@article), class:"button" %>
+  <%= link_to "Edit", edit_article_path(@article), class:"button" if user_signed_in? %>
   <%= link_to "Destroy", article_path(@article), data: {
                     turbo_method: :delete,
                     turbo_confirm: "Are you sure?"
-                  }, class:"button" %>
+                  }, class:"button" if user_signed_in?%>
 </ul>
 </div>
 

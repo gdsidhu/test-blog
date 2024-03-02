@@ -3,7 +3,7 @@
 <%= form_with model: @article do |f| %>
 <div class="field-container">
   <div class="field"><%= f.label :title, class:"label"  %>
-    <%= f.text_field :title, class:"text-field-main" %>
+    <%= f.text_field :title, class:"text-field-main", placeholder:"title goes here..." %>
     </div>
   <% @article.errors.full_messages_for(:title).each do |message| %>
   <div><%= message %></div>
@@ -12,7 +12,7 @@
 <div class="field-container">
   <div class="field">
     <%= f.label :body,class:"label" %>
-  <%= f.text_area :body, class:"text-field" %>
+  <%= f.text_area :body, class:"text-field",placeholder:"body goes here..." %>
   </div>
   
   <% @article.errors.full_messages_for(:body).each do |message| %>

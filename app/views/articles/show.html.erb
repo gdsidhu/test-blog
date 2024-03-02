@@ -44,9 +44,11 @@
 <h2>Comments</h2>
 <br>
 <% @article.comments.each do |comment| %>
+  <% if comment.commenter.to_s != '' && comment.body.to_s != ''%>
   <p>
     <%= comment.commenter.to_s + ": " + comment.body.to_s%>
   </p>
+  <% end%>
 <% end %>
 
 </div>

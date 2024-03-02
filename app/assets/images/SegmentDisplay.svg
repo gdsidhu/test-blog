@@ -1,15 +1,12 @@
-<% stylesheet_link_tag "navbar" %>
-<nav style="display: flex">
-  <div class="logo-container">
-  <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" class="seven-seg">
-  <g id="jattDaLogosvg 1">
-  <path id="dot2" d="M88.6378 73.9531C89.8323 73.9531 90.8006 73.0252 90.8006 71.8805C90.8006 70.7358 89.8323 69.8078 88.6378 69.8078C87.4433 69.8078 86.475 70.7358 86.475 71.8805C86.475 73.0252 87.4433 73.9531 88.6378 73.9531Z" fill="#737373" stroke="black" stroke-width="0.681269" stroke-linecap="square" stroke-linejoin="bevel"/>
-  <g id="background_display">
-  <path id="shape0" d="M93.504 17.1807H51.6907V78.8193H93.504V17.1807Z" fill="#404040" stroke="black" stroke-width="1.8023" stroke-linecap="square" stroke-linejoin="bevel"/>
-  <path id="shape17" d="M46.464 16.896H4.608V79.296H46.464V16.896Z" fill="#404040" stroke="black" stroke-width="1.536" stroke-linecap="square" stroke-linejoin="bevel"/>
-  </g>
-  <g id="empty_segments">
-  <path id="shape10" d="M82.3389 43.5746L83.1332 27.3333L85.8736 24.6628L87.9998 27.3696L87.427 43.4861L84.7692 46.2914L82.3389 43.5746Z" stroke="black" stroke-width="0.681269" stroke-linecap="square" stroke-linejoin="bevel"/>
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="jattDaLogosvg 1">
+<path id="dot2" d="M88.6378 73.9531C89.8323 73.9531 90.8006 73.0252 90.8006 71.8805C90.8006 70.7358 89.8323 69.8078 88.6378 69.8078C87.4433 69.8078 86.475 70.7358 86.475 71.8805C86.475 73.0252 87.4433 73.9531 88.6378 73.9531Z" fill="#737373" stroke="black" stroke-width="0.681269" stroke-linecap="square" stroke-linejoin="bevel"/>
+<g id="background_display">
+<path id="shape0" d="M93.504 17.1807H51.6907V78.8193H93.504V17.1807Z" fill="#404040" stroke="black" stroke-width="1.8023" stroke-linecap="square" stroke-linejoin="bevel"/>
+<path id="shape17" d="M46.464 16.896H4.608V79.296H46.464V16.896Z" fill="#404040" stroke="black" stroke-width="1.536" stroke-linecap="square" stroke-linejoin="bevel"/>
+</g>
+<g id="empty_segments">
+<path id="shape10" d="M82.3389 43.5746L83.1332 27.3333L85.8736 24.6628L87.9998 27.3696L87.427 43.4861L84.7692 46.2914L82.3389 43.5746Z" stroke="black" stroke-width="0.681269" stroke-linecap="square" stroke-linejoin="bevel"/>
 <path id="shape13" d="M59.9812 48.3605C59.2566 48.3827 58.3412 50.0636 57.6383 50.7936C57.3409 55.795 56.9444 62.4634 56.647 67.4648C57.3229 68.2488 58.224 69.2942 58.8999 70.0782C59.6839 69.4023 60.7292 68.5011 61.5132 67.8253C61.8106 62.7969 62.2071 56.0923 62.5045 51.0639C61.8016 50.2529 60.8387 48.3341 59.9812 48.3605Z" stroke="black" stroke-width="0.681269" stroke-linecap="square" stroke-linejoin="bevel"/>
 <path id="shape22" d="M10.5217 51.3869L9.70716 68.2895L11.9473 70.8691L14.5947 68.4253L15.4771 51.4547L13.1013 49.011C13.1013 49.011 12.2414 49.8029 10.5217 51.3869Z" stroke="black" stroke-width="0.72576" stroke-linecap="square" stroke-linejoin="bevel"/>
 </g>
@@ -47,12 +44,3 @@
 </g>
 </g>
 </svg>
-<span class='logo'>MITTRAN DA BLOG</span>
-</div>
-  <div class="menus">
-    <%= link_to "Home", root_path, class:"menu-item" %>
-    <%= link_to "About", root_path, class:"menu-item" %>
-    <%= link_to "Login", root_path, class:"menu-item" %>
-    <span id="signup"><%= link_to "SignUp", root_path, class:"menu-item" %></span>
-  </div>
-</nav>

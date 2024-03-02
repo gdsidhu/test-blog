@@ -8,6 +8,7 @@
 <div class="article-content">
 <p><%= @article.body %></p>
 
+<br>
 <ul>
   <%= link_to "Edit", edit_article_path(@article), class:"button" %>
   <%= link_to "Destroy", article_path(@article), data: {

@@ -18,6 +18,7 @@ h1 {
   border-radius: 5px;
   transition-duration: 200ms;
   margin-top: 20px;
+  margin-left: 10px;
 }
 .button:hover {
   text-decoration: none;

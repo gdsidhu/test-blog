@@ -12,6 +12,32 @@ nav {
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.275);
 }
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.seven-seg {
+  height: 80px;
+}
+.menus {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+#signup {
+  background-color: #0e766e;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+#signup:hover {
+  background-color: #0f5e59;
+}
+#signup a {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
 .logo {
   font-size: 25px;
   color: white;
